@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1663785246 "/Users/9r0x/Projects/Resume/resume.tex" "/Users/9r0x/Projects/Resume/resume.pdf" "resume" 1663785246
-  "/Users/9r0x/Projects/Resume/resume.aux" 1663785246 8 a94a2480d3289e625eea47cd1b285758 ""
-  "/Users/9r0x/Projects/Resume/resume.tex" 1663785245 1652 805270c6e19bdfb1a4498b3bb076beee ""
-  "/dev/null" 1663785246 0 d41d8cd98f00b204e9800998ecf8427e ""
+["pdflatex"] 1664568630 "/Users/9r0x/Projects/Resume/resume.tex" "/Users/9r0x/Projects/Resume/resume.pdf" "resume" 1664568630
+  "/Users/9r0x/Projects/Resume/resume.aux" 1664568630 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/Users/9r0x/Projects/Resume/resume.tex" 1664568629 1746 9f221ad02d9ea6e400bee036e3335017 ""
+  "/dev/null" 1664568629 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "/usr/local/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty" 1284331290 1458 43ab4710dc82f3edeabecd0d099626b2 ""
@@ -35,9 +35,9 @@
   "/usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf" 1557092114 35484 cb1661360667bf4db662a8895053b554 ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1579149126 4259636 290b6c62c50399685e320464b0011051 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "awesome-cv.cls" 1558927038 26716 396986627bec606ee0b3dbeea0292788 ""
-  "resume.tex" 1663785245 1652 805270c6e19bdfb1a4498b3bb076beee ""
+  "awesome-cv.cls" 1664566396 26715 c9bbb0dfb0952948f84a26c1dcdec89f ""
+  "resume.tex" 1664568629 1746 9f221ad02d9ea6e400bee036e3335017 ""
   (generated)
+  "resume.log"
   "/Users/9r0x/Projects/Resume/resume.log"
   "/Users/9r0x/Projects/Resume/resume.pdf"
-  "resume.log"
