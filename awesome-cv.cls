@@ -151,9 +151,8 @@
 \newbool{acvSectionColorHighlight}
 \setbool{acvSectionColorHighlight}{true}
 
-% Awesome section color
-\def\@sectioncolor#1#2#3{%
-  \ifbool{acvSectionColorHighlight}{{\color{awesome}#1#2#3}}{#1#2#3}%
+\def\@sectioncolor#1#2{%
+  \ifbool{acvSectionColorHighlight}{{\color{awesome}#1#2}}{#1#2}%
 }
 
 
@@ -188,8 +187,8 @@
 %-------------------------------------------------------------------------------
 % Configure styles for each CV elements
 % For fundamental structures
-\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\headerfontlight\color{graytext} #1}}
-\newcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\bfseries\color{text} #1}}
+\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\headerfontlight\color{text} #1}}
+\newcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1em}\headerfontlight\color{text} #1}}
 \newcommand*{\headerpositionstyle}[1]{{\fontsize{7.6pt}{1em}\bodyfont\scshape\color{awesome} #1}}
 \newcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\headerfont\itshape\color{lighttext} #1}}
 \newcommand*{\headersocialstyle}[1]{{\fontsize{6.8pt}{1em}\headerfont\color{text} #1}}
@@ -264,6 +263,10 @@
 \newcommand*{\lastname}[1]{\def\@lastname{#1}}
 \newcommand*{\familyname}[1]{\def\@lastname{#1}}
 \def\@familyname{\@lastname}
+
+\newcommand*{\dob}[1]{\def\@dob{#1}}
+\newcommand*{\gender}[1]{\def\@gender{#1}}
+\newcommand*{\country}[1]{\def\@country{#1}}
 
 % Define writer's address
 % Usage: \address{<address>}
@@ -395,8 +398,8 @@
 \newcommand{\acvHeaderAfterQuoteSkip}{5mm}
 
 % Others
-\newcommand{\acvSectionTopSkip}{-2mm}
-\newcommand{\acvSectionContentTopSkip}{2.5mm}
+\newcommand{\acvSectionTopSkip}{-1.5mm}
+\newcommand{\acvSectionContentTopSkip}{2mm}
 
 
 %-------------------------------------------------------------------------------
@@ -448,13 +451,31 @@
   \end{minipage}
   \begin{minipage}[c]{\headertextwidth}
     \ifthenelse{\equal{#1}{L}}{\raggedright}{\ifthenelse{\equal{#1}{R}}{\raggedleft}{\centering}}
-    \headerfirstnamestyle{\@firstname}\headerlastnamestyle{{}\acvHeaderNameDelim\@lastname}%
+    \headerfirstnamestyle{\@firstname}\headerlastnamestyle{\@lastname}%
     \\[\acvHeaderAfterNameSkip]%
     \ifthenelse{\isundefined{\@position}}{}{\headerpositionstyle{\@position\\[\acvHeaderAfterPositionSkip]}}%
     \ifthenelse{\isundefined{\@address}}{}{\headeraddressstyle{\@address\\[\acvHeaderAfterAddressSkip]}}%
     \headersocialstyle{%
       \newbool{isstart}%
       \setbool{isstart}{true}%
+      \ifthenelse{\isundefined{\@country}}%
+        {}%
+        {%
+          \faMobile\acvHeaderIconSep\@country%
+          \setbool{isstart}{false}%
+        }%
+      \ifthenelse{\isundefined{\@gender}}%
+        {}%
+        {%
+          \faMobile\acvHeaderIconSep\@gender%
+          \setbool{isstart}{false}%
+        }%
+      \ifthenelse{\isundefined{\@dob}}%
+        {}%
+        {%
+          \faMobile\acvHeaderIconSep\@dob%
+          \setbool{isstart}{false}%
+        }%
       \ifthenelse{\isundefined{\@mobile}}%
         {}%
         {%
@@ -670,15 +691,15 @@
 
 % Define an environment for cvitems(for cventry)
 \newenvironment{cvitems}{%
-  \vspace{-4.0mm}
+  \vspace{-3.0mm}
   \begin{justify}
   \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
-    \setlength{\parskip}{0pt}
+    \setlength{\parskip}{1pt}
     \renewcommand{\labelitemi}{\bullet}
 }{%
   \end{itemize}
   \end{justify}
-  \vspace{-4.0mm}
+  \vspace{-3.0mm}
 }
 
 

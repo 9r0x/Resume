@@ -1,28 +1,41 @@
-\cvsection{Tech experiences}
+\cvsection{项目经历}
 \begin{cventries}
+ 
   \cventry
-    {(Intern) Corporate Audit: data automation and technology}
-    {Bank of America}
-    {Charlotte, US}
-    {May. 2023 - Aug. 2023}
+    {SysXCHG: 一种灵活的内核syscall设计(CCS2023) 及其他进行中的项目}
+    {布朗大学安全系统实验室}
+    {普罗维登斯, 美国}
+    {2022 - 至今}
     {
       \begin{cvitems}
-        \item {Implemented audit testing coverage through streamlining protocols, leading to 25\% time savings}
-        \item {Visualized coverage statistics through Python and Alteryx, delivering analysis to senior directors}
-        \item {Developed high-concurrency data workflows for SQL and NoSQL databases}
+        \item {设计了Log N时间复杂度的syscall过滤器, 提高了seccomp bpf在项目内的运行效率}
+        \item {定制化编译 Linux 内核 6.0.8, 实现了arity过滤器并优化其效率}
+        \item {为带有syscall准则的二进制文件设计了高灵活度的syscall handler, 提升内核效率和可用性}      
       \end{cvitems}
     }
 
   \cventry
-    {(Research) Per-process system call filtering and kernel development}
-    {Brown Secure Systems Lab}
-    {Providence, US}
-    {Jan. 2023 - PRESENT}
+    {微服务Benchmarking}
+    {导师Nikos Vasilakis}
+    {普罗维登斯, 美国}
+    {09. 2023 - 现在}
     {
       \begin{cvitems}
-        \item {Developed an advanced log-time syscall filtering application using seccomp BPF, resulting in improved system efficiency}
-        \item {Customized Linux kernel 6.0.8 compilation, integrating arity-based filters for enhanced performance}
-        \item {Designed versatile syscall handlers for policy-driven binaries, enabling flexibility and streamlined execution}      
+        \item {研究实际应用中的微服务架构, 并设计Benchmarking工具}
+        \item {设计高效的微服务Benchmarking工具, 提升测试效率}
+      \end{cvitems}
+    }
+
+  \cventry
+    {数据自动化与技术研发}
+    {美国银行}
+    {夏洛特, 美国}
+    {05. 2023 - 08. 2023}
+    {
+      \begin{cvitems}
+        \item {实现了流程化审计数据测试与覆盖, 节约近25\%计算和分析时间}
+        \item {通过Python和Alteryx自动化数据呈现和分析的流程}
+        \item {开发并优化了大数据集的并行计算和处理, 减少项目周期和成本}
       \end{cvitems}
     }
 
@@ -42,15 +55,15 @@
   \end{comment}
 
   \cventry
-    {(Intern)Full stack web application development for high-performance trading data solution}
+    {全栈网络开发与高带宽同步的实现}
     {Elle Investments}
-    {Remote, US}
-    {May. 2022 - Dec. 2022}
+    {纽约, 美国}
+    {05. 2022 - 12. 2022}
     {
       \begin{cvitems}
-          \item {Overhauled a low-level persistent storage saving 20\% write time, 40\% read time, and 45\% RAM, increasing overall performance}
-          \item {Addressed SQL injection vulnerabilities and restructured MVC+OOP stateless deployment framework to strengthen security measures}
-          \item {Implemented a dynamic HTTP cache that increased concurrency by 1000x, significantly enhancing the overall user experience}
+          \item {设计并实现了底层高可用数据储存, 减少20\%写入, 40\%读取时间和45\%内存使用}
+          \item {识别并修复数个SQL注入漏洞, 重构项目前后端PHP, JavaScript代码逻辑}
+          \item {实现动态HTTP缓存机制, 提升服务器并发数近1000倍}
       \end{cvitems}
     }
   %% \cventry
@@ -67,27 +80,28 @@
   %%   }
 
   \cventry
-    {(Research) Quantum machine learning lab experiences on cutting edge models}
-    {The IBM Qiskit Quantum Computing}
-    {Remote}
-    {July 2021 - Aug. 2021}
+    {量子机器学习}
+    {IBM Qiskit 量子计算}
+    {远程}
+    {07. 2021 - 08. 2021}
     {
       \begin{cvitems}
-%        \item {Achieved 100\% in implementing diverse Quantum Machine Learning algorithms on IBM Quantum platform}
-        \item {Investigated practical applications of Quantum Approximate Optimization Algorithm, optimizing solutions for complex problems}
-        \item {Conducted in-depth analysis of Quantum Boltzmann Machines, driving advancements in data generation and quantum computing}
+%       \item {Achieved 100\% in implementing diverse Quantum Machine Learning algorithms on IBM Quantum platform}
+        \item {实现并在真实数据集运行QAOA, VQE等算法}
+        \item {分析并研究Quantum Boltzmann Machines等量子算法在机器学习领域的运用}
       \end{cvitems}
     }
 
   \cventry
-    {(Research) Second-author with Dr.Arnav Sheth(MIT) on a paper about curve inversion timing strategy}
-    {Correlation between Fama-French factors and business cycles}
-    {Remote}
-    {June 2021 - PRESENT}
+    {基于利率曲线的时间策略, 论文第二作者}
+    {Fama-French因子和商业周期的分析}
+    {远程}
+    {06. 2021 - 12. 2021}
     {
       \begin{cvitems}
-        \item {Developed a probit-based recession forecasting model, achieving 70\% accuracy, which contributed to a 10\% annualized return}
-        \item {Analyzed business cycles through Fama-French factors using ex-ante and ex-post evaluation methods, confirming the model's validity}
+        \item {由麻省理工学院的Arnav Sheth教授指导}
+        \item {实现了一个基于probit的经济周期预测模型, 获得70\%准确率, 并获得10\%年化收益}
+        \item {通过Fama-French因子分析经济周期, 在ex post和ex ante数据集下印证模型收益}
       \end{cvitems}
     }
 
