@@ -103,7 +103,7 @@
 %-------------------------------------------------------------------------------
 %% Page Layout
 % Configure page margins with geometry
-\geometry{left=2.0cm, top=0.5cm, right=2.0cm, bottom=0.5cm, footskip=.5cm}
+\geometry{left=2.0cm, top=1cm, right=2.0cm, bottom=1cm, footskip=.5cm}
 
 %% Header & Footer
 % Set offset to each header and footer
@@ -670,7 +670,7 @@
 
 % Define an environment for cvitems(for cventry)
 \newenvironment{cvitems}{%
-  \vspace{-4.0mm}
+  \vspace{-3.0mm}
   \begin{justify}
   \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
     \setlength{\parskip}{0pt}
@@ -678,7 +678,7 @@
 }{%
   \end{itemize}
   \end{justify}
-  \vspace{-4.0mm}
+  \vspace{-3.0mm}
 }
 
 
