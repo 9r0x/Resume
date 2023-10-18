@@ -461,24 +461,28 @@
       \ifthenelse{\isundefined{\@country}}%
         {}%
         {%
-          \faMobile\acvHeaderIconSep\@country%
+          \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
+          \faGlobe\acvHeaderIconSep\@country%
           \setbool{isstart}{false}%
         }%
       \ifthenelse{\isundefined{\@gender}}%
         {}%
         {%
-          \faMobile\acvHeaderIconSep\@gender%
+          \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
+          \faUser\acvHeaderIconSep\@gender%
           \setbool{isstart}{false}%
         }%
       \ifthenelse{\isundefined{\@dob}}%
         {}%
         {%
-          \faMobile\acvHeaderIconSep\@dob%
+          \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
+          \faBirthdayCake\acvHeaderIconSep\@dob%
           \setbool{isstart}{false}%
         }%
       \ifthenelse{\isundefined{\@mobile}}%
         {}%
         {%
+          \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
           \faMobile\acvHeaderIconSep\@mobile%
           \setbool{isstart}{false}%
         }%
